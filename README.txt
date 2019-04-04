@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/Panker/pen/WmKKWR.
 
- I like playing with fonts...
