@@ -4,7 +4,7 @@
 *:after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 html, body {
@@ -52,7 +52,7 @@ h1 {
   color: white;
   display: flex;
   flex-direction: row;
-  z-index: 3;
+  /* z-index: 3; */
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -203,4 +203,86 @@ h1 span {
     -webkit-transform: scale(2.5);
             transform: scale(2.5);
   }
+}
+
+/* ------------------FOOTER----------------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  color: #fff;
+  z-index: 2;
+}
+h3, li {
+  letter-spacing: 4px;
+  padding: 7px;
+}
+li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.5);
+}
+a:hover {
+  transition: 0.2s ease;
+  border-bottom: solid 1px rgba(255,255,255,0.2);
+}
+ul {
+  list-style-type: none;
+  flex: 1 0 auto;
+}
+/* ------------------FOOTER----------------- */
+/* ------------------POP UP----------------- */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.2);
+  display: none;
+  z-index: 4;
+}
+#imprint-popup .popup-content{
+  width: 50%;
+  height: 50%;
+  margin: 15% auto;
+  position: relative;
+  border: 5px solid white;
+  background-color: #000;
+}
+#privacy-policy-popup .popup-content{
+  width: 70%;
+  height: 70%;
+  margin: 7% auto;
+  position: relative;
+  border: 5px solid white;
+  background-color: #000;
+  overflow: scroll;
+}
+.close {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  background: #333;
+  border-radius: 50%;
+  border: 3px solid white;
+  text-decoration: none;
+  line-height: 0;
+  padding: 9px 0 11px;
+  width: 20px;
+  text-align: center;
+}
+.popup:target {
+  display: block;
+}
+#imprint-popup h4 {
+  width: 75%;
+  height: 75%;
+  margin: 20% auto;
+  position: relative;
+  letter-spacing: 0.1rem;
 }
