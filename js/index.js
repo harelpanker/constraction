@@ -8,6 +8,7 @@ var letters = head.querySelectorAll('[data-el="letter"]');
 var blocks = [];
 var borders = [];
 var bouncer = document.querySelector('[data-el="bouncer"]');
+var continued = document.querySelector('.continued');
 var bouncerRadius = bouncer.clientWidth * 0.5;
 var bouncerClone;
 var bubbles = [];
@@ -215,6 +216,7 @@ var fixBouncer = function(){
 
 var removeInfo = function(){
   bouncer.classList.add('infoOut');
+  continued.classList.add('continued-ghost');
 };
 
 var initBouncer = function(){
@@ -354,3 +356,11 @@ function getRandomInt(min, max) {
 
 // ______________________________ F I R E
 init();
+
+// ______________________________ continued
+function removeText() {
+  continued.setAttribute('class', 'continued-ghost');
+};
+
+// ______________________________ refrash on resize
+window.onresize = function(){ location.reload(); }
