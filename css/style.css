@@ -2,13 +2,6 @@
   font-family: 'myFirstFont';
   src: url('../fonts/BauPro-Medium.ttf') format('truetype');
 }
-/* @font-face {
-  font-family: 'myFirstFont';
-  src: url('../fonts/BauWebPro-Bold.eot');
-  src: url('../fonts/BauWebPro-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/BauWebPro-Bold.woff2') format('woff2'),
-       url('../fonts/BauWebPro-Bold.woff') format('woff')
-} */
 
 *,
 *:before,
@@ -72,12 +65,12 @@ h1 {
        user-select: none;
 }
 h1 span {
-  letter-spacing: 5rem;
   position: relative;
   display: block;
-  width: 1.4rem;
-  height: 2rem;
-  margin: 0.3rem;
+  width: 2.3rem;
+  height: 3rem;
+  margin: 0.9rem;
+  font-size: 5rem;
 }
 
 .bouncer {
@@ -106,7 +99,7 @@ h1 span {
   animation: bounce 0.5s infinite alternate-reverse;
 }
 .bouncer:after {
-  content: 'Have Fun';
+  content: 'meanwhile have fun';
   position: absolute;
   bottom: -50px;
   left: 50%;
@@ -127,12 +120,10 @@ h1 span {
 
 .continued {
   color: #fff;
-  position: relative;
-  right: 13%;
+  position: center;
   text-transform: uppercase;
   font-size: 0.65rem;
   font-family: 'myFirstFont', serif;
-  font-size: 0.65rem;
   letter-spacing: 3px;
   z-index: 10;
 }
@@ -214,27 +205,27 @@ h1 span {
 
 @-webkit-keyframes explodeA {
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
 }
 
 @keyframes explodeA {
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
 }
 @-webkit-keyframes explodeB {
   100% {
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
+    -webkit-transform: scale(4.5);
+            transform: scale(4.5);
   }
 }
 @keyframes explodeB {
   100% {
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
+    -webkit-transform: scale(4.5);
+            transform: scale(4.5);
   }
 }
 
