@@ -47,6 +47,7 @@ var engine = Engine.create(  {  enableSleeping: false  });
     engine.world.wireframes = false;
     engine.world.gravity.x = 0;
     engine.world.gravity.y = 0;
+    engine.world.gravity.scale = 0;
 
 var renderer = Render.create({
   element: stage,
@@ -60,6 +61,7 @@ var renderer = Render.create({
     width: w,
     height: h,
     wireframes: false
+    // wireframes: true
   }
 });
 
